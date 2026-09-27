@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}确认订单{% endblock %}
+{% block content %}
+<div class="page-title"><p class="eyebrow">CHECKOUT</p><h1>确认订单</h1></div>
+<section class="checkout-card"><div><h2>商品清单</h2>{% for item in items %}<div class="checkout-line"><span>{{ item['title'] }} × {{ item['quantity'] }}</span><strong>¥{{ '%.2f'|format(item['subtotal']) }}</strong></div>{% endfor %}</div><div class="checkout-total"><span>应付合计</span><strong>¥{{ '%.2f'|format(total) }}</strong></div><form method="post"><button class="button full-button" type="submit">提交订单</button></form></section>
+{% endblock %}

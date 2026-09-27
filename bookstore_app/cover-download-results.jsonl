@@ -1,0 +1,16 @@
+{"book_id": 1, "title": "山茶文具店", "author": "小川糸", "previous_cover": "cover-01.svg", "strategy": "title", "query": "山茶文具店", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 2, "title": "云边有个小卖部", "author": "张嘉佳", "previous_cover": "cover-02.svg", "strategy": "title", "query": "云边有个小卖部", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 3, "title": "人类简史", "author": "尤瓦尔·赫拉利", "previous_cover": "cover-03.svg", "strategy": "title", "query": "人类简史", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 4, "title": "小王子", "author": "安托万·德·圣埃克苏佩里", "previous_cover": "cover-04.svg", "strategy": "title", "query": "小王子", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 5, "title": "非暴力沟通", "author": "马歇尔·卢森堡", "previous_cover": "cover-05.svg", "strategy": "title", "query": "非暴力沟通", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 6, "title": "百年孤独", "author": "加西亚·马尔克斯", "previous_cover": "cover-06.svg", "strategy": "title", "query": "百年孤独", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 7, "title": "原则", "author": "瑞·达利欧", "previous_cover": "cover-07.svg", "strategy": "title", "query": "原则", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 8, "title": "刻意练习", "author": "安德斯·艾利克森", "previous_cover": "cover-08.svg", "strategy": "title", "query": "刻意练习", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 9, "title": "万历十五年", "author": "黄仁宇", "previous_cover": "cover-09.svg", "strategy": "title", "query": "万历十五年", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 10, "title": "Python编程从入门到实践", "author": "埃里克·马瑟斯", "previous_cover": "cover-10.svg", "strategy": "title", "query": "Python编程从入门到实践", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 11, "title": "解忧杂货店", "author": "东野圭吾", "previous_cover": "cover-11.svg", "strategy": "title", "query": "解忧杂货店", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 12, "title": "给青年的十二封信", "author": "朱光潜", "previous_cover": "cover-12.svg", "strategy": "title", "query": "给青年的十二封信", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 13, "title": "史记", "author": "司马迁", "previous_cover": "book-13.svg", "strategy": "title", "query": "史记", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 14, "title": "资治通鉴", "author": "司马光", "previous_cover": "book-14.svg", "strategy": "title", "query": "资治通鉴", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 15, "title": "明朝那些事儿", "author": "当年明月", "previous_cover": "book-15.svg", "strategy": "title", "query": "明朝那些事儿", "status": "api_failed", "api_status": "urlerror"}
+{"book_id": 16, "title": "人类群星闪耀时", "author": "斯蒂芬·茨威格", "previous_cover": "book-16.svg", "strategy": "title", "query": "人类群星闪耀时", "status": "api_failed", "api_status": "urlerror"}

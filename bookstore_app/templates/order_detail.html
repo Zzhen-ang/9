@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}订单 #{{ order['id'] }}{% endblock %}
+{% block content %}
+<div class="page-title"><p class="eyebrow">ORDER #{{ order['id'] }}</p><h1>订单详情</h1><p class="muted">{{ order['created_at'] }} · <span class="status">{{ order['status'] }}</span></p></div>
+<section class="order-detail-card">{% for item in items %}<div class="checkout-line"><span>{{ item['title'] }} × {{ item['quantity'] }}</span><strong>¥{{ '%.2f'|format(item['price'] * item['quantity']) }}</strong></div>{% endfor %}<hr><div class="summary-total"><span>订单合计</span><strong>¥{{ '%.2f'|format(order['total']) }}</strong></div></section><a href="{{ url_for('orders') }}" class="back-link">← 返回订单列表</a>
+{% endblock %}

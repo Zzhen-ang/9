@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}我的订单{% endblock %}
+{% block content %}
+<div class="page-title"><p class="eyebrow">ORDER HISTORY</p><h1>我的订单</h1></div>
+{% if orders %}<div class="orders-list">{% for order in orders %}<a class="order-row" href="{{ url_for('order_detail', order_id=order['id']) }}"><div><small>订单 #{{ order['id'] }} · {{ order['created_at'] }}</small><h3>{{ order['item_count'] }} 件商品</h3></div><div><span class="status">{{ order['status'] }}</span><strong>¥{{ '%.2f'|format(order['total']) }}</strong></div><span class="arrow">→</span></a>{% endfor %}</div>{% else %}<div class="empty-state"><h3>还没有订单</h3><p>挑几本喜欢的书，开始第一次购买吧。</p><a class="button" href="{{ url_for('index') }}">去选书</a></div>{% endif %}
+{% endblock %}

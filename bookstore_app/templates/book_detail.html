@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %}{{ book['title'] }}{% endblock %}
+{% block content %}
+  <div class="breadcrumbs"><a href="{{ url_for('index') }}">首页</a> / {{ book['category'] }} / {{ book['title'] }}</div>
+  <section class="detail-panel">
+    <div class="detail-cover"><img src="{{ url_for('cover', filename=book['cover']) }}" alt="{{ book['title'] }}封面"></div>
+    <div class="detail-copy"><span class="tag">{{ book['category'] }}</span><h1>{{ book['title'] }}</h1><p class="detail-author">作者：{{ book['author'] }}</p><p class="detail-description">{{ book['description'] }}</p><div class="detail-price">¥{{ '%.2f'|format(book['price']) }}</div><a class="button" href="{{ url_for('add_to_cart', book_id=book['id']) }}">加入购物车</a></div>
+  </section>
+  {% if related %}
+  <section class="section-head"><div><p class="eyebrow">YOU MAY LIKE</p><h2>同类推荐</h2></div></section>
+  <div class="book-grid compact-grid">{% for item in related %}<article class="book-card"><a href="{{ url_for('book_detail', book_id=item['id']) }}" class="cover-wrap"><img src="{{ url_for('cover', filename=item['cover']) }}" alt="{{ item['title'] }}封面"></a><div class="book-info"><h3><a href="{{ url_for('book_detail', book_id=item['id']) }}">{{ item['title'] }}</a></h3><p class="author">{{ item['author'] }}</p><div class="price-row"><strong>¥{{ '%.2f'|format(item['price']) }}</strong></div></div></article>{% endfor %}</div>
+  {% endif %}
+{% endblock %}
